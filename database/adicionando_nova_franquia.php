@@ -1,5 +1,5 @@
 <?php
-include 'database/db.php';
+include 'db.php';
 
 $nome_candidato = $_POST['nome'];
 $telefone_candidato = $_POST['telefone'];
@@ -28,4 +28,4 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
     } else {
         echo("Parece que alguma coisa deu errado, por favor tente novamente.");
     };
-    }
+}
