@@ -1,752 +1,440 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+
 /*  Header  */
-body{
-  overflow-x: hidden ;
-}
-.header{
-  min-height: 10vh;
-  border-bottom: 2px solid black ;
-  background-color: yellow;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-.header img{
-  margin: 1em 0;
-  width: 250px;
-}
-/*  Conteudo-1  */
-.erro{
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
-  color: red;
-  width: 450px;
-  border-radius: 25px ;
-  font-weight: bolder;
-  background-color: rgba(168, 98, 98, 0.61);
-}
-.enviado{
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
-  color: rgb(60, 255, 0);
-  width: 450px;
-  border-radius: 25px ;
-  font-weight: bolder;
-  background-color: rgba(168, 98, 98, 0.61);
-}
-.lateral-1{
-  width: 50%;
-  float: left;
-  height: 100%;
-  text-align: center;
-}
-.h1-topic{
-  font-size: 3.5em;
-  margin-top: 0.5em;
-}
-.h4-sub-title{
-  font-size: 1.5em;
-}
-.sub-title{
-  font-size: 2em;
-}
-.text-description-equivale{
-  font-size: 1.2em;
-  font-weight: 550;
-  width: 750px;
-  margin: 1em auto;
-  text-align: justify;
-}
-.end-title{
-  text-decoration: underline;
-  font-size: 3em;
-}
-.end-text-equivale{
-  font-size: 1.2em;
-}
-.span{
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-/*  Conteudo-2  */
-.lateral-2{
-  width: 50%;
-  float: left;
-}
-.formulario-web{
-  width: 800px;
-  top: 20%;
-  position: fixed;
-  height: 500px;
-}
-.form-control{
-  width: 500px;
-  margin: auto;
-}
-.formulario-web label{
-  font-size: 25px;
-  text-indent: -9em;
-}
-.formulario-web span{
-  display: block;
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: bold;
-}
-.formulario-web p{
-  font-size: 2em;
-  margin: 1em 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-.formulario-web input{
-  width: 450px;
-  font-size: 1.5em;
-  text-indent: 1em;
-  height: 35px;
-  border: 2px solid black;
-  border-radius: 25px;
-  margin-bottom: 1em;
-}
-.enviar-btn{
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 1em auto;
-  background-color: yellow;
-  border: 3px solid black;
-  border-radius: 25px;
-}
-.formulario-dentro input[type=submit]{
-  width: 200px;
-  text-indent: 0;
-}
-:root {--input-border: #8b8a8b;--input-focus-h: 45; /*Matriz*/--input-focus-s: 100%; /*Saturação*/--input-focus-l: 42%; /*Luminosidade*/}
-.formulario-web input:focus{
-  border-color: hsl(
-    var(--input-focus-h),
-    var(--input-focus-s),
-    var(--input-focus-l)
-  );
-  box-shadow: 0 0 0 4px
-    hsla(
-      var(--input-focus-h),
-      var(--input-focus-s),
-      calc(var(--input-focus-l) + 40%),
-      0.8
-    );
-  outline: 3px solid transparent;
-}
-.enviar-btn:hover{
-  background-color: black;
-  color: yellow;
-  border: 3px solid yellow;
-}
-.formulario-dentro{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.lateral-2 .aviso-botao, .lateral-2.formulario, .lateral-2.btn-form{
-  display: none;
-}
-/*  Imagens */
-.img1{width: 500px;margin: 1em 0;}
-.img2{width: 750px;margin: 1em 0;}
-@media screen and (max-width: 1024px) {
-  .lateral-2 .aviso-botao, .lateral-2.formulario,.formulario-web, .lateral-2.btn-form{
-    display: block;
-  }
-  .lateral-2 .formulario-web{
-    display: none;
-  }
-  .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(255, 255, 0, 0.801);
-    border-bottom:  2px solid black;
-  }
-  .header img{
-    margin: 15px 0;
-    width: 450px;
-  }
-  .lateral-1{
-    float: none;
-  }
-  .lateral-2{
-    float: none;
-  }
-  .conteudo-central{
-    text-align: center;
-  }
-  .h1-topic{
-    font-size: 5em;
-  }
-  .h4-sub-title{
-    font-size: 2em;
-  }
-  .conteudo-central h2{
-    margin-top: 1.5em;
-  }
-  .text-description-equivale{
-    width: 800px;
-    text-align: justify;
-    font-size: 2.3em;
-    margin: 10px auto;
-  }
-  .img1{width: 850px;height: 600px; margin:2em 0;}
-  .img2{width: 850px;height: 600px; margin:2em 0;}
-  .sub-title{
-    text-align: center;
-    text-justify: center;
-    width: 850px;
-    font-size: 3em ;
-    margin-top: 0.5em;
-    margin: 0 auto;
-  }
-  .end-title{
-    text-decoration: underline;
-    font-size: 5em;
-  }
-  .span{
-    font-size: 1.5em;
-    margin-top: -0.2em;
-    text-transform: uppercase;
-  }
-  .end-text-equivale{
-    font-size: 2.5em
-  }
-  .aviso-botao{
-    margin: 0 auto;
-    width: 800px;
-    font-size: 2.5em;
-    margin-top: 1em;
-  }
-  .btn-form{
-    background-color: yellow;
-    border: 3px solid black;
-    text-transform: uppercase;
-    width: 700px;
-    height: 100px;
-    margin: 1em;
-    border-radius: 25px;
-    font-size: 4em;
-    font-weight: bold;
-  }
-  .formulario p{
-    font-size: 4em;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;    
-  }
-  .formulario{
-    display: none;
-    border: 2px solid black;
-    background-color: yellow;
-    width: 750px;
-    height: 850px;
-    border-radius: 20px;
-    position: fixed;
-    margin: auto;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-  }
-  .formulario-dentro{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .formulario-dentro label{
-    font-size: 2.5em;
-    text-align: left;
-    text-indent: 50px;
-    font-weight: bold;
-  }
-  .formulario-dentro input{
-    width: 650px;
-    height: 75px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 2.5em;
-  }
-  .formulario-dentro input:focus{
-    outline-color: black ;
-  }
-  .enviar-btn{
-    width: 250px;
-    height: 100px;
-    font-size: 3em;
-    background-color: black;
-    border: 2px solid yellow;
-    border-radius: 25px ;
-    color: yellow;
-    text-transform: uppercase;
-    margin: auto;
-  }
-  .material-icons-outlined{
-    font-size: 3.5em;
-    font-weight: bold;
-    color: black;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 100%;
-    position:absolute;
-    width: 80px;
-    height: 80px;
-    right:-35px;
-    top:-30px;
-    cursor:pointer
-  }
-  .material-icons-outlined:hover{
-    background-color: black;
-    color: yellow;
-  }
+
+body {
+    overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .header{
+.header {
+    min-height: 10vh;
+    border-bottom: 2px solid black;
+    background-color: yellow;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    background-color: rgba(255, 255, 0, 0.801);
-    border-bottom:  2px solid black;
-  }
-  .header img{
-    margin: 10px 0;
-    width: 300px;
-  }
-  .conteudo-central{
-    text-align: center;
-  }
-  .h1-topic{
-    font-size: 4em;
-  }
-  .h4-sub-title{
-    font-size: 1.4em;
-  }
-  .conteudo-central h2{
-    margin-top: 1em;
-  }
-  .text-description-equivale{
-    width: 500px;
-    text-align: justify;
+}
+
+.header img {
+    margin: 1em 0;
+    width: 250px;
+}
+
+
+/*  Conteudo-1  */
+
+.enviado {
     font-size: 1.5em;
-    margin: 10px auto;
-  }
-  .img1{width: 500px;height: 350px; margin:2em 0;}
-  .img2{width: 500px;height: 350px; margin:2em 0;}
-  .sub-title{
     text-align: center;
-    text-justify: center;
-    width: 550px;
-    font-size: 2em ;
-    margin-top: 0.5em;
     margin: 0 auto;
-  }
-  .end-title{
+    text-transform: uppercase;
+    color: rgb(60, 255, 0);
+    width: 450px;
+    border-radius: 25px;
+    font-weight: bolder;
+    background-color: rgba(168, 98, 98, 0.61);
+}
+
+.lateral-1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.h1-topic {
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+
+.h4-sub-title {
+    font-size: 1.5em;
+}
+
+.sub-title {
+    font-size: 2em;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.text-description-equivale {
+    font-size: 1.2em;
+    font-weight: 475;
+    width: 750px;
+    margin: 1em auto;
+    text-align: justify;
+}
+
+.end-title {
     text-decoration: underline;
     font-size: 3em;
-  }
-  .span{
+}
+
+.end-text-equivale {
     font-size: 1.2em;
-    margin-top: -0.5em;
+}
+
+.span {
     text-transform: uppercase;
-  }
-  .end-text-equivale{
-    font-size: 1.5em
-  }
-  .btn-form{
-    background-color: yellow;
-    border: 3px solid black;
-    text-transform: uppercase;
-    width: 400px;
-    height: 60px;
-    margin: 1em;
-    border-radius: 25px;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  .formulario p{
-    font-size: 2.5em;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;    
-  }
-  .formulario{
-    display: none;
-    border: 2px solid black;
-    background-color: yellow;
-    width: 450px;
-    height: 550px;
-    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+
+/*  Conteudo-2  */
+
+.lateral-2 {
+    width: 50%;
+    float: left;
+}
+
+.formulario-web {
+    width: 800px;
+    top: 18%;
     position: fixed;
-    margin: auto;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-  }
-  .formulario-dentro{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .formulario-dentro label{
-    font-size: 1.5em;
-    text-align: left;
-    text-indent: 50px;
-    font-weight: bold;
-  }
-  .formulario-dentro input{
-    width: 350px;
-    height: 50px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.5em;
-  }
-  .formulario-dentro input:focus{
-    outline-color: black ;
-  }
-  .enviar-btn{
-    width: 150px;
-    height: 50px;
-    font-size: 1.4em;
-    background-color: black;
-    border: 2px solid yellow;
-    border-radius: 25px ;
-    color: yellow;
-    text-transform: uppercase;
-    margin: auto;
-    margin-bottom: 15px;
-  }
-  .aviso-botao{
+    height: 500px;
+}
+
+.form-control {
     width: 500px;
-    font-size: 1.7em;
-  }
-  .material-icons-outlined{
+    margin: auto;
+}
+
+.formulario-web label {
+    font-size: 25px;
+    text-indent: -9em;
+}
+
+.formulario-web span {
+    display: block;
     font-size: 2em;
+    text-align: center;
     font-weight: bold;
-    color: black;
-    background-color: yellow;
+}
+
+.formulario-web p {
+    font-size: 2em;
+    margin: 0.5em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formulario-web input {
+    width: 450px;
+    font-size: 1.5em;
+    text-indent: 1em;
+    height: 2em;
     border: 2px solid black;
-    border-radius: 100%;
-    position:absolute;
-    width: 50px;
+    border-radius: 25px;
+    margin-bottom: 1em;
+}
+
+.enviar-btn {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1em auto;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.formulario-dentro input[type=submit] {
+    text-indent: 0;
+    width: 150px;
+    height: 2em;
+}
+
+:root {
+    --input-border: #8b8a8b;
+    --input-focus-h: 45;
+    /*Matriz*/
+    --input-focus-s: 100%;
+    /*Saturação*/
+    --input-focus-l: 42%;
+    /*Luminosidade*/
+}
+
+.formulario-web input:focus {
+    border-color: hsl( var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+    box-shadow: 0 0 0 4px hsla( var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) + 40%), 0.8);
+    outline: 3px solid transparent;
+}
+
+.enviar-btn:hover {
+    background-color: black;
+    color: yellow;
+    border: 3px solid yellow;
+}
+
+.formulario-dentro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral-2 .formulario-mobile {
+    display: none;
+}
+
+.erro_session {
+    text-align: center;
+    font-size: 1.5em;
+    width: 500px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
     height: 50px;
-    right:-10px;
-    top:-10px;
-    cursor:pointer
-  }
-  .material-icons-outlined:hover{
-    background-color: black;
-    color: yellow;
-  }
 }
-@media screen and (max-width: 414px) {
-  .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(255, 255, 0, 0.801);
-    border-bottom:  2px solid black;
-  }
-  .header img{
-    margin: 10px 0;
-    width: 200px;
-  }
-  .conteudo-central{
+
+.sucesso {
     text-align: center;
-  }
-  .h1-topic{
-    font-size: 35px;
-    margin-top: 0.5em ;
-  }
-  .h4-sub-title{
-    font-size: 1em;
-  }
-  .text-description-equivale{
-    text-align: justify;
-    width: 300px;
-    font-size: 1.2em;
-    margin: 10px auto;
-  }
-  .img1{width: 300px;height: 250px;}
-  .img2{width: 300px;height: 250px;}
-  .aviso-botao{
-    width: 300px;
-    font-size: 1.2em;
-    margin-top: 1em;
-  }
-  .sub-title{
-    width: 300px;
-    font-size: 1.5em ;
-    margin-top: 0.5em;
-  }
-  .end-title{
-    font-size: 2.5em;
-    text-decoration: underline;
-  }
-  .span{
-    font-size: 0.8em;
-    margin-top: -0.1em;
-    text-transform: uppercase;
-  }
-  .end-text-equivale{
-    text-align: center;
-    margin: 0 auto;
-    width: 350px;
-    font-size: 1.2em;
-  }
-  .btn-form{
-    background-color: yellow;
-    border: 3px solid black;
-    text-transform: uppercase;
-    width: 250px;
-    height: 45px;
-    margin: 1em;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-  .formulario p{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;    
-  }
-  .formulario{
-    display: none;
-    border: 2px solid black;
-    background-color: yellow;
-    width: 300px;
-    height: 380px;
-    border-radius: 20px;
-    position: fixed;
-    margin: auto;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-  }
-  .material-icons-outlined{
-    font-size: 1.3em;
-    font-weight: bold;
-    color: black;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 100%;
-    position:absolute;
-    height: 25px;
-    width: 30px;
-    height: 30px;
-    right:-10px;
-    top:-10px;
-    cursor:pointer
-  }
-  .material-icons-outlined:hover{
-    background-color: black;
-    color: yellow;
-  }
-  .formulario-dentro{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .formulario-dentro h3{
-    font-size: 2em;
-    margin-top: 0.5em;
-  }
-  .formulario-dentro label{
-    font-size: 1em;
-    text-align: left;
-    text-indent: 25px;
-    font-weight: bold;
-  }
-  .formulario-dentro input{
-    width: 250px;
-    height: 30px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 25px;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-top: -50px;
     font-size: 1.5em;
-  }
-  .formulario-dentro input:focus{
-    outline-color: black ;
-  }
-  .enviar-btn{
-    width: 150px;
-    height: 35px;
-    font-size: 1.25em;
-    background-color: black;
-    border: 2px solid yellow;
-    border-radius: 25px ;
-    color: yellow;
+    width: 500px;
     text-transform: uppercase;
-    margin: auto;
-    margin-bottom: 15px;
-  }
+    color: green;
+    font-weight: bolder;
+    height: 50px;
 }
-@media screen and (max-width: 360px) {
-  .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(255, 255, 0, 0.801);
-    border-bottom:  2px solid black;
-  }
-  .header img{
-    margin: 10px 0;
-    width: 200px;
-  }
-  .conteudo-central{
-    text-align: center;
-  }
-  .h1-topic{
-    font-size: 35px;
-    margin-top: 0.5em ;
-  }
-  .h4-sub-title{
-    font-size: 1em;
-  }
-  .text-description-equivale{
-    text-align: justify;
-    width: 300px;
-    font-size: 1.2em;
-    margin: 10px auto;
-  }
-  .img1{width: 300px;height: 250px;}
-  .img2{width: 300px;height: 250px;}
-  .aviso-botao{
-    font-size: 1.2em;
-    margin-top: 1em;
-  }
-  .sub-title{
-    width: 300px;
-    font-size: 1.5em ;
-    margin-top: 0.5em;
-  }
-  .end-title{
-    text-decoration: underline;
-  }
-  .span{
-    font-size: 0.8em;
-    margin-top: -0.2em;
-    text-transform: uppercase;
-  }
-  .end-text-equivale{
-    text-align: center;
-    width: 300px;
-  }
-  .btn-form{
-    background-color: yellow;
-    border: 3px solid black;
-    text-transform: uppercase;
-    width: 250px;
-    height: 45px;
-    margin: 1em;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-  .formulario p{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;    
-  }
-  .formulario{
-    display: none;
-    border: 2px solid black;
-    background-color: yellow;
-    width: 300px;
-    height: 380px;
-    border-radius: 20px;
-    position: fixed;
-    margin: auto;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-  }
-  .material-icons-outlined{
-    font-size: 1.3em;
-    font-weight: bold;
-    color: black;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 100%;
-    position:absolute;
-    height: 25px;
-    width: 30px;
-    height: 30px;
-    right:-10px;
-    top:-10px;
-    cursor:pointer
-  }
-  .material-icons-outlined:hover{
-    background-color: black;
-    color: yellow;
-  }
-  .formulario-dentro{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .formulario-dentro h3{
-    font-size: 2em;
-    margin-top: 0.5em;
-  }
-  .formulario-dentro label{
-    font-size: 1em;
-    text-align: left;
-    text-indent: 25px;
-    font-weight: bold;
-  }
-  .formulario-dentro input{
-    width: 250px;
-    height: 30px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.5em;
-  }
-  .formulario-dentro input:focus{
-    outline-color: black ;
-  }
-  .enviar-btn{
-    width: 150px;
-    height: 35px;
-    font-size: 1.25em;
-    background-color: black;
-    border: 2px solid yellow;
-    border-radius: 25px ;
-    color: yellow;
-    text-transform: uppercase;
-    margin: auto;
-    margin-bottom: 15px;
-  }
+
+
+/*  Imagens */
+
+.img1 {
+    width: 500px;
+    margin: 1em 0;
+}
+
+.img2 {
+    width: 750px;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 1600px) {
+    .formulario-web span {
+        width: 650px;
+        margin: 0 auto;
+    }
+    .text-description-equivale {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .text-description-equivale {
+        width: 500px;
+    }
+    .sub-title {
+        width: 700px;
+    }
+    .img2 {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .img2 {
+        width: 575px;
+    }
+    .end-text-equivale {
+        font-size: 1.2em;
+        width: 550px;
+        margin: 0 auto;
+    }
+    .formulario-web {
+        width: 50%;
+        top: 17%
+    }
+    .formulario-web span {
+        width: 550px;
+    }
+    .formulario-web input {
+        height: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    .formulario-dentro input[type=submit] {
+        height: 1.5em;
+    }
+    .enviar-btn {
+        margin: 0.5em auto;
+    }
+    .erro_session,
+    .sucesso {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .lateral-2 .formulario-web {
+        display: none;
+    }
+    .lateral-2 .formulario-mobile {
+        display: block;
+    }
+    .lateral-1,
+    .lateral-2 {
+        float: none;
+        width: 100%;
+    }
+    .formulario {
+        display: none;
+    }
+    .text-description-equivale {
+        width: 750px;
+    }
+    .h1-topic {
+        font-size: 3em;
+    }
+    .end-title {
+        font-size: 2.5em;
+    }
+    .sub-title {
+        width: 800px;
+    }
+    .img1 {
+        width: 450px;
+    }
+    .img2 {
+        width: 650px;
+    }
+    .aviso-botao {
+        display: flex;
+        flex-direction: column;
+        width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+    }
+    .btn-form {
+        margin: 1.5em auto;
+        width: 275px;
+        height: 2.5em;
+        font-weight: 550;
+        font-size: 1em;
+        text-transform: uppercase;
+        background-color: yellow;
+        border: 4px solid black;
+        border-radius: 50px;
+    }
+    .formulario {
+        display: none;
+    }
+    .formulario-dentro {
+        border: 2px solid black;
+        background-color: yellow;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        z-index: 20;
+        position: fixed;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
+    }
+    .formulario-dentro p {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+    .formulario-dentro label {
+        width: 400px;
+        text-align: left;
+    }
+    .formulario-dentro input {
+        width: 400px;
+        height: 2.5em;
+        font-size: 1em;
+        border-radius: inherit;
+        border: 2px solid black;
+        text-indent: 25px;
+        margin-bottom: 1em;
+    }
+     :root {
+        --input-border: #8b8a8b;
+        --input-focus-h_m: 49;
+        --input-focus-s_m: 100%;
+        --input-focus-l_m: 30%;
+    }
+    .formulario-dentro input:focus {
+        border-color: hsl( var(--input-focus-h_m), var(--input-focus-s_m), var(--input-focus-l_m));
+        box-shadow: 0 0 0 4px hsla( var(--input-focus-h_m), var(--input-focus-s_m), calc(var(--input-focus-l_m) + 40%), 0.8);
+        outline: 3px solid transparent;
+    }
+    .fog {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 19;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .material-icons-outlined {
+        font-size: 27px;
+        font-weight: bold;
+        color: black;
+        background-color: yellow;
+        border: 2px solid black;
+        border-radius: 100%;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: -15px;
+        top: -15px;
+        cursor: pointer;
+        text-indent: 1 px;
+    }
+    .material-icons-outlined:hover {
+        background-color: black;
+        color: yellow;
+    }
+    .enviar-btn {
+        margin: -10px 0 10px 0;
+        width: 150px;
+        height: 2em;
+        font-size: 1em;
+    }
+    .erro_session,
+    .sucesso {
+        width: 550px;
+        height: 25px;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .text-description-equivale {
+        width: 550px;
+    }
+    .sub-title {
+        width: 500px;
+    }
+    .img2 {
+        width: 550px;
+    }
+    .aviso-botao {
+        width: 550px;
+    }
+    .formulario-dentro {
+        width: 450px;
+        height: 450px;
+    }
+    .formulario-dentro input {
+        margin-bottom: 0.5em;
+        height: 1.5em;
+    }
+    .enviar-btn {
+        margin: 5px 0 5px 0;
+    }
 }
