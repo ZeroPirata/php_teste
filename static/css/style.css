@@ -95,9 +95,10 @@ body {
 
 .formulario-web {
     width: 800px;
-    top: 18%;
+    top: 15%;
     position: fixed;
-    height: 500px;
+    height: 80vh;
+    border-left: 5px dashed #00000050;
 }
 
 .form-control {
@@ -150,7 +151,7 @@ body {
     height: 2em;
 }
 
-:root {
+ :root {
     --input-border: #8b8a8b;
     --input-focus-h: 45;
     /*Matriz*/
@@ -184,7 +185,7 @@ body {
 
 .erro_session {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 500px;
     text-transform: uppercase;
     color: rgb(255, 0, 0);
@@ -195,7 +196,7 @@ body {
 .sucesso {
     text-align: center;
     margin-top: -50px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 500px;
     text-transform: uppercase;
     color: green;
@@ -241,6 +242,10 @@ body {
 @media screen and (max-width:1280px) {
     .img2 {
         width: 575px;
+    }
+    .formulario-web {
+        border-right: 2px dashed #00000050;
+        margin-left: 1em;
     }
     .end-text-equivale {
         font-size: 1.2em;
@@ -436,5 +441,30 @@ body {
     }
     .enviar-btn {
         margin: 5px 0 5px 0;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .img1,
+    .img2,
+    .end-text-equivale,
+    .sub-title,
+    .aviso-botao,
+    .text-description-equivale,
+    .sucesso,
+    .erro_session,
+    .formulario-dentro {
+        width: 350px;
+    }
+    .formulario-dentro input,
+    .formulario-dentro label {
+        width: 250px;
+    }
+    .material-icons-outlined {
+        height: 27px;
+        width: 27px;
+        top: -10px;
+        font-size: 1.1em;
+        right: -9px;
     }
 }
